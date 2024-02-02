@@ -1,0 +1,110 @@
+--Sales Trends
+SELECT 
+  EXTRACT(DATE FROM Order_Timestamp) as Date,
+  SUM(Total_amount) as DailySales
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+GROUP BY Date
+ORDER BY Date;
+
+
+--Brand Performance
+SELECT 
+  Brand,
+  SUM(Total_amount) as TotalSales
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+GROUP BY Brand
+ORDER BY TotalSales DESC;
+
+--Kitchen Efficiency
+SELECT 
+  Kitchen,
+  SUM(Total_amount) as TotalSales
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+GROUP BY Kitchen
+ORDER BY TotalSales DESC;
+
+--Channel Effectiveness
+SELECT 
+  Channel,
+  COUNT(*) as OrderCount,
+  SUM(Total_amount) as TotalSales
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+GROUP BY Channel
+ORDER BY TotalSales DESC;
+
+
+--Geographical Trends
+SELECT 
+  destination_lat,
+  destination_lng,
+  SUM(Total_amount) as TotalSales
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+WHERE destination_lat != -9999 AND destination_lng != -9999
+GROUP BY destination_lat, destination_lng;
+
+--Customer Behavior
+SELECT 
+  Customer_Name,
+  COUNT(*) as OrderCount,
+  SUM(Total_amount) as TotalSpent
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+GROUP BY Customer_Name
+ORDER BY TotalSpent DESC;
+
+--Geographic Distribution of Orders
+SELECT 
+  destination_lat,
+  destination_lng,
+  COUNT(*) as OrderCount
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+WHERE destination_lat != -9999 AND destination_lng != -9999
+GROUP BY destination_lat, destination_lng;
+
+--Total Sales Over Time
+SELECT 
+  EXTRACT(YEAR FROM Order_Timestamp) as Year,
+  EXTRACT(MONTH FROM Order_Timestamp) as Month,
+  SUM(Total_amount) as MonthlySales
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+GROUP BY Year, Month
+ORDER BY Year, Month;
+
+--Average Order Value
+SELECT 
+  AVG(Total_amount) as AvgOrderValue
+FROM `di-engineer-project.restaurant_order_dataset.order_table`;
+
+
+--Order Count by Channel
+SELECT 
+  Channel,
+  COUNT(*) as OrderCount
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+GROUP BY Channel
+ORDER BY OrderCount DESC;
+
+
+--Sales by Kitchen Location
+SELECT 
+  Kitchen,
+  SUM(Total_amount) as TotalSales
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+GROUP BY Kitchen
+ORDER BY TotalSales DESC;
+
+--Customer Order Frequency
+SELECT 
+  Customer_Name,
+  COUNT(*) as OrderFrequency
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+GROUP BY Customer_Name
+ORDER BY OrderFrequency DESC;
+
+--Order Type Distribution
+SELECT 
+  Order_delivery_type,
+  sum(Total_amount) as TotalSales,
+  COUNT(*) as OrderCount
+FROM `di-engineer-project.restaurant_order_dataset.order_table`
+GROUP BY Order_delivery_type
+ORDER BY OrderCount DESC;
