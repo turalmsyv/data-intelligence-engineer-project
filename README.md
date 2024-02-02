@@ -117,6 +117,6 @@ Python (matplotlip, plotly,sklearn, GradientBoostingRegressor), Bigquery, SQL, L
 These hypotheses, derived from our data-driven analysis, reveal significant insights into customer behaviors, sales trends, and operational efficiencies. They not only provide clear-cut findings but also uncover curious anomalies and unexplained trends. These insights are invaluable in fine-tuning our business strategies, enhancing customer engagement, and optimizing our operational practices to better align with market dynamics and customer preferences
 
 ## Deliverables
-* A detailed report with your analysis and findings.
-* Visual representations (graphs/charts) of key insights.
-* Any hypotheses or conclusions drawn from the data.
+* A detailed report with your analysis and findings - Looker Studio
+* Visual representations (graphs/charts) of key insights - Looker Studio.
+* Any hypotheses , algorithm, ML models and conclusions drawn from the data - PowerPoint file.
