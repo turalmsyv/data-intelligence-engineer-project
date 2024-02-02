@@ -1,6 +1,6 @@
 # NYC Dark Kitchen Sales Data Analysis Project with Advanced Analytics
 ## Overview
-Welcome to the Dark Kitchen Sales Data Analysis Project with Advanced Analytics! This project is an exciting opportunity to dive deep into the sales data of dark kitchen operations in New York City from 2020 to 2021. Your task is to uncover insights into customer behavior, sales trends, and operational efficiency using both traditional analysis and advanced analytical techniques.
+Welcome to the Dark Kitchen Sales Data Analysis Project with Advanced Analytics! This project is an exciting opportunity to dive deep into the sales data of dark kitchen operations in New York City from 2020 to 2021. Task is to uncover insights into customer behavior, sales trends, and operational efficiency using both traditional analysis and advanced analytical techniques.
 
 Objective
 The main goal is to create a comprehensive visual narrative that showcases key insights from the dataset. This includes not just identifying patterns and trends but also applying advanced algorithms and machine learning models to predict future trends, detect anomalies, and understand customer churn.
