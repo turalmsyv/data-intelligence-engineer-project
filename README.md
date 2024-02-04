@@ -20,19 +20,19 @@ The dataset contains sales data with the following fields:
 
 ## Key Performance Indicators (KPIs)
 
-## Top 100 Customers
-## Average Revenue Trend
-## Metrics by Kitchen
-## Total Revenue by Kitchen
-## Delivery Type Distribution
-## Metrics by Channels
-## Total Revenue and Orders
-## Sales Insights
-## Brand Insights
-## Geographic Distribution of Orders within NYC
-## Kitchen and Brand Performance
-## Kitchen Insights
-## Channel Insights
+* Top 100 Customers
+* Average Revenue Trend
+* Metrics by Kitchen
+* Total Revenue by Kitchen
+* Delivery Type Distribution
+* Metrics by Channels
+* Total Revenue and Orders
+* Sales Insights
+* Brand Insights
+* Geographic Distribution of Orders within NYC
+* Kitchen and Brand Performance
+* Kitchen Insights
+* Channel Insights
 
 # Advanced Analytical Techniques
 
